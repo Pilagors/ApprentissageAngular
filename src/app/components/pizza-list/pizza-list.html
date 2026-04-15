@@ -1,1 +1,13 @@
-<p>pizza-list works!</p>
+<div>
+    <h2>Liste des Pizzas</h2>
+
+    <div *ngfor="let pizza of pizzas">
+        <app-pizza-item
+            [pizza]="pizza"
+            (add)="addToCart($event)"
+        >
+        </app-pizza-item>
+    </div>
+
+    <app-cart [cart]="cart"></app-cart>
+</div>
