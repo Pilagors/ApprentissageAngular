@@ -1,7 +1,7 @@
 <div>
     <h2>Liste des Pizzas</h2>
 
-    <div *ngfor="let pizza of pizzas">
+    <div *ngFor="let pizza of pizzas">
         <app-pizza-item
             [pizza]="pizza"
             (add)="addToCart($event)"

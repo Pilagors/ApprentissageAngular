@@ -3,7 +3,7 @@ import { Pizza } from '../../models/pizza';
 
 @Component({
   selector: 'app-pizza-item',
-  imports: [],
+  standalone: true,
   templateUrl: './pizza-item.html',
   styleUrl: './pizza-item.css',
 })
