@@ -1,1 +1,15 @@
-<p>cart works!</p>
+<div>
+    <h2>Panier</h2>
+
+    <div *ngIf="cart.length === 0">
+        Panier vide
+    </div>
+
+    <ul>
+        <li *ngFor="let pizza of cart">
+            {{ pizza.name }} - {{ pizza.price }} $
+        </li>
+    </ul>
+
+    <p>Total : {{ getTotal() }} $</p>
+</div>
