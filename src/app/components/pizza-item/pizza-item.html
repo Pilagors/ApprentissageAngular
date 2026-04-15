@@ -1,7 +1,13 @@
-<div class="pizza-card">
-    <h3>{{ pizza.name }}</h3>
-    <img [src]="pizza.image" width="100">
-    <p>{{ pizza.price }} $</p>
+<div class="pizza-card card bg-base-100 w-96 shadow-sm">
     
-    <button class="btn btn-primary" (click)="addToCart()">Ajouter</button>
+    <figure>
+        <img [src]="pizza.image">
+    </figure>
+    <div class="card-body">
+        <h3 class="card-title">{{ pizza.name }}</h3>
+        <p>{{ pizza.price }} $</p>
+        <div class="card-actions justify-end">
+            <button class="btn btn-primary" (click)="addToCart()">Ajouter</button>
+        </div>
+    </div>
 </div>
